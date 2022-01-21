@@ -1,0 +1,145 @@
+@import '/src/variable.scss';
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+// color
+.white{
+    color:$white_color;
+}
+.black{
+    color:$black_color;
+}
+.blackLight{
+    color: $black_light;
+}
+.gray{
+    color:$gray;
+}
+.darkGreen{
+    color:$primary_color;
+}
+.lightGreen{
+    color:$white_color;
+}
+
+// font family
+.fontBold{
+    font-family:'Montserrat-Bold';
+}
+.fontLight{
+    font-family:'Montserrat-Light';
+}
+.fontRegular{
+    font-family:'Montserrat-Regular';
+}
+.fontThin{
+    font-family:'Montserrat-Thin';
+}
+.fontMedium{
+    font-family:'Montserrat-Medium'; 
+}
+
+// font size
+
+.xxl{
+    font-size: 88px;
+
+}
+.xl{
+    font-size: 36px;
+}
+
+.xlg{
+font-size: 32px;
+}
+
+.lg{
+    font-size: 24px;
+}
+.md{
+    font-size: 22px;
+
+}
+.xmd{
+    font-size: 18px;
+}
+.sm{
+    font-size: 14px;
+}
+
+
+// font weight
+
+
+// font weight
+
+.fontWeight_100{
+    font-weight: 100;
+}
+.fontWeight_200{
+    font-weight: 200;
+}.fontWeight_300{
+    font-weight: 300;
+}.fontWeight_400{
+    font-weight: 400;
+}.fontWeight_500{
+    font-weight: 500;
+}.fontWeight_600{
+    font-weight: 600;
+}.fontWeight_700{
+    font-weight: 700;
+}.fontWeight_800{
+    font-weight: 800;
+}.fontWeight_900{
+    font-weight: 900;
+}.fontWeight_normal{
+    font-weight: normal;
+}
+
+
+.fa-play{
+    color:$primary_color;
+}
+
+
+.firstLetter::first-letter{
+    text-transform: capitalize;
+}
+
+.capital{
+    text-transform: capitalize;
+}
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform:lowercase;
+}
+
+
+[class*="col_"] {
+    position: relative;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+
+  }
+
+.col_1 {width: 8.33%;}
+.col_2 {width: 16.66%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.33%;}
+.col_5 {width: 41.66%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.33%;}
+.col_8 {width: 66.66%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.33%;}
+.col_11 {width: 91.66%;}
+.col_12 {width: 100%;}

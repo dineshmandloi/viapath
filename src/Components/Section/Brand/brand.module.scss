@@ -1,0 +1,47 @@
+@import '/src/variable.scss';
+@import '/src/utilities.scss';
+
+.topBrand{
+    background-image:linear-gradient(-90deg,#29cc53,#049296,#29CC51); 
+    padding:30px 0;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  .brandText{
+    flex: 1 1 50%;
+    color: $white_color;
+
+    h2{
+        margin-bottom: 38px;
+        @media only screen and (max-width:767px){
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        line-height: 44px;
+        @media only screen and (max-width:767px){
+            line-height:normal;
+        }
+    }
+    @media only screen and (max-width:767px){
+        flex: 1 1 100%;
+
+    }
+   }
+   .brandImg{
+    flex: 1 1 50%; 
+   }
+   img{
+       max-width: 100%;
+       width: 100%;
+       object-fit: cover;
+    height: auto;
+   }
+   @media only screen and (max-width:767px){
+    flex-wrap: wrap;
+   }
+}

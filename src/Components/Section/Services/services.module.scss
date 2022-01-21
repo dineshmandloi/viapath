@@ -1,0 +1,127 @@
+@import '/src/variable.scss';
+@import '/src/utilities.scss';
+
+.topServices{
+    position: relative;
+}
+
+.services::before{
+    content: '';
+    background-image: url('../../../images/wavy-lines-7@2x.jpg');
+    width: 534px;
+    position: absolute;
+    left: -54px;
+    top: 0px;
+    height: 706px;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.service_heading{
+    margin: 40px 10px;
+    padding-top: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        @media only screen and (max-width:767px){
+            
+                margin-top: 10px;
+                font-size: 24px;
+        }
+    }
+    @media only screen and (max-width:767px){
+        flex-direction: column-reverse;
+        padding-top: 0;
+
+    }
+}
+.services{
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 159px;
+    .servicesText{
+    flex: 1 1 100%;
+    padding: 40px;
+    height: 100%;
+    box-shadow: rgba(133, 144, 149, 0.2);
+    background: white;
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);   
+    border-radius: 7px;
+    h2{
+    margin-bottom: 26px;
+    @media only screen and (max-width:767px){
+        font-size: 18px;
+
+    }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 30px 0;
+
+    }
+    p{
+        margin-bottom: 45px;
+        line-height: 2;
+    &::first-letter{
+        text-transform: capitalize
+    }
+    @media only screen and (max-width:767px){
+        margin-bottom: 10px;
+        line-height: normal;
+
+    }
+    }
+    @media only screen and (max-width:767px){
+        padding: 14px;
+
+    }
+}
+.col_6{
+    @media only screen and (max-width:1115px){
+        flex: 1 1 25%;
+        margin-bottom: 20px;
+
+    }
+    @media only screen and (max-width:992px){
+        flex: 1 1 50%;
+
+    }
+    @media only screen and (max-width:767px){
+
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:1115px){
+    flex-wrap: wrap;    
+}
+@media only screen and (max-width:992px){
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+
+}
+@media only screen and (max-width:767px){
+    flex-wrap: wrap;
+}
+
+
+}
+
+.services::before{
+    @media only screen and (max-width:767px){
+    display: none;
+    }
+}
+
+
+

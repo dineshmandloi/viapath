@@ -1,0 +1,101 @@
+@import '/src/utilities.scss';
+@import '/src/variable.scss';
+
+header{
+    background-color:$black_color;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    // position: absolute;
+    width: 100%;
+    word-break: normal;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    .humburger{
+        display: none;
+        @media only screen and (max-width:992px){
+            display: block;
+            color: white;
+            font-size: 32px;
+        }
+    }
+   .menu{
+        ul{
+            display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    li{
+        padding: 25px;
+        a{
+            word-break: normal;
+            @media only screen and (max-width:1280px){
+                font-size: 14px;
+            }
+            @media only screen and (max-width:992px){
+                font-size: 14px;  
+        } 
+        }
+        @media only screen and (max-width:1280px){
+            padding:8px;
+        }
+        @media only screen and (max-width:992px){
+            padding:10px; 
+    } 
+
+    }
+        }
+        @media only screen and (max-width:992px){
+            display: none; 
+    } 
+
+    }
+
+}
+
+.rightMenu{
+    background-color:$primary_color;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px 0 0 0;
+    ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        li{
+            padding: 25px;
+            a{
+                word-break: normal;
+                @media only screen and (max-width:1280px){
+                    font-size: 14px;
+                }
+            }
+            @media only screen and (max-width:1280px){
+                padding:8px;
+            }
+            button{
+                margin-top: 0;
+                @media only screen and (max-width:1040px){
+                    padding: 8px 13px;
+                }
+            }
+        }
+    }
+
+@media only screen and (max-width:992px){
+    display: none;
+}
+}
+
+
+
+

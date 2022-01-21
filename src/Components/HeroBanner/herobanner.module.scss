@@ -1,0 +1,90 @@
+@import '/src/utilities.scss';
+
+.hero_banner{
+    background-image: url('../../images/hero-sample-2@2x.jpg');
+    background-repeat: no-repeat;
+    min-height: 850px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 21px;
+    background-size: contain;
+    margin-top: -70px;
+    .banner{
+        position: absolute;
+        right: 52px;
+        top: 27%;
+        @media only screen and (max-width:767px){
+            top: 22%;
+            right: 0;
+        }
+    }
+    .heroText{
+        max-width: 683px;
+        width: 100%;
+        padding: 20px;
+    h1{
+        margin-bottom: 40px;
+        @media only screen and (max-width:767px){
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+    }
+    p
+    {
+        line-height: 1.5;
+        @media only screen and (max-width:767px){
+            line-height: normal;
+        }
+    }  
+        i{
+            margin-left: 10px;
+        }
+    button{
+        @media only screen and (max-width:767px){
+            padding:14px 20px;
+            margin-top: 20px;
+    }
+
+@media only screen and (max-width:444px){
+    margin-top: 20px;
+}
+    }
+        @media only screen and (max-width:767px){
+            max-width: 100%;
+            width: 100%;
+            padding: 0px 15px;
+        }
+    }
+    @media only screen and (max-width:767px){
+        margin-top: -20px;
+        min-height: 444px;
+    
+    }
+    @media only screen and (max-width:444px){
+        margin-top: -20px;
+        min-height: 600px;
+    }
+}
+
+.hero_banner::after{
+    content: '';
+    background-image: url('../../images/wavy-lines-1-cropped@3x.png');
+    width: 697px;
+    position: absolute;
+    right: 0px;
+    bottom: -53px;
+    height: 286px;
+    background-position: center;
+    background-size: cover;
+    z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+

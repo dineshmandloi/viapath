@@ -1,0 +1,47 @@
+@import '/src/variable.scss';
+@import '/src/utilities.scss';
+
+.topViapath{
+    background-image: linear-gradient(-90deg,#29cc53,#049296,#29CC51);
+    padding: 15px;
+    @media only screen and (max-width:991px){padding: 15px 0;}
+    @media only screen and (max-width:767px){padding: 15px 0;}
+}
+
+.viapath{
+    display: flex;
+    align-items: center;
+  .viapathText{
+    color: $black_color;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: $white_color;
+h2{
+    @media only screen and (max-width:767px){font-size: 24px;margin-bottom: 20px;}
+
+}
+p{
+    @media only screen and (max-width:767px){line-height:normal;}
+
+}
+    @media only screen and (max-width:767px){padding: 0; }
+
+   }
+   .viapathImg{
+    flex: 0 0 22%;
+   }
+   button{
+    @media only screen and (max-width:991px){ margin: 20px 0 10px 0;}
+    @media only screen and (max-width:767px){margin: 0px 0 10px 0;}
+
+   }
+   img{
+       max-width: 100%;
+       width: 100%;
+       object-fit: cover;
+       height: auto;
+   }
+   @media only screen and (max-width:991px){padding: 0;}
+   @media only screen and (max-width:767px){align-items: flex-start;flex-direction: column-reverse;}
+
+}

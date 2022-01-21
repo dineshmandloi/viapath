@@ -1,0 +1,122 @@
+@import '/src/variable.scss';
+@import '/src/utilities.scss';
+
+
+
+.topFooter{
+    background-color: $black_color;
+    padding: 50px 0px;
+    position: relative;
+    .container{
+        @media only screen and (max-width:992px){
+            padding: 0;
+}
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        .footerText{
+            flex: 1 1 50%;
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+        address{
+            color: white;
+            font-family:'Montserrat-Medium';
+            font-style: normal;
+        }
+        ul{
+            list-style: none;
+            li{
+                padding: 20px 0;
+                i{
+                    margin-right: 30px;
+                }
+                @media only screen and (max-width:992px){
+                    padding: 10px 0;
+
+                }
+                @media only screen and (max-width:767px){
+                    padding: 6px 0;
+
+                }
+                @media only screen and (max-width:444px){
+                    padding: 10px 0;
+                }
+            }
+        }
+        .footItem{
+            width: 260px;
+            min-height: 94px;
+            margin: 40px 0 0 38px;
+            line-height: 36px;
+            @media only screen and (max-width:992px){
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+            }
+           
+            @media only screen and (max-width:444px){
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+            }
+        }
+        p{
+            @media only screen and (max-width:767px){
+                line-height: normal;
+
+            }
+        }
+        button{
+            margin-top: 45px;
+            @media only screen and (max-width:992px){
+                margin-top: 20px;
+            }
+        }
+        @media only screen and (max-width:992px){
+            padding: 15px;
+        }
+        @media only screen and (max-width:767px){
+            flex: 1 1 50%;
+
+        }
+        @media only screen and (max-width:444px){
+            flex: 1 1 100%;
+        }
+    }
+    @media only screen and (max-width:992px){
+        flex-wrap: wrap;
+    }
+    @media only screen and (max-width:444px){
+        flex-wrap: wrap;
+
+    }
+    }
+    @media only screen and (max-width:992px){
+        padding: 30px 0px;
+    }
+    @media only screen and (max-width:767px){
+        padding:20px 0;
+
+    }
+    @media only screen and (max-width:444px){
+        padding: 30px 0px;
+
+    }
+
+}
+
+.footer::after{
+    content: '';
+    background-image: url('../../images/Mask\ Group\ 13@3x.png');
+    width: 1440px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 514px;
+    background-position: center;
+    background-size: cover;
+   
+}
+

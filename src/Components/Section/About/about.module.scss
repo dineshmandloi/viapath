@@ -1,0 +1,65 @@
+@import '/src/variable.scss';
+@import '/src/utilities.scss';
+
+.topAbout{
+    background-color: $gray;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+  .aboutText{
+    flex: 1 1 50%;
+    padding-left: 30px;
+    padding: 30px;
+    h2{
+        margin-bottom: 38px;
+        @media only screen and (max-width:767px){
+            font-size: 24px;
+            margin-bottom: 20px;
+
+        }
+     
+    }
+    p{
+        line-height: 38px;
+        @media only screen and (max-width:767px){
+            line-height:normal;
+
+        }
+     
+    }
+    button{
+        @media only screen and (max-width:767px){
+            margin: 20px 0 10px 0;
+        }
+    }
+    @media only screen and (max-width:767px){
+        flex: 1 1 100%;
+
+    }
+    @media only screen and (max-width:767px){
+        &:nth-child(2){
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 15px;
+        }
+   
+}    
+   }
+   .aboutImg{
+    flex: 1 1 50%; 
+    height: 700px;
+   }
+   img{
+       max-width: 100%;
+       width: 100%;
+       object-fit: cover;
+       height: 100%;
+   }
+   @media only screen and (max-width:767px){
+    flex-wrap: wrap;
+   }
+}
+
+
